@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - Sima Sürücü Kursu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <!-- Navbar (Reuse from Index) -->
+    <div class="top-bar"><div class="container"><div class="top-bar-info"><span><i class="fa-solid fa-phone"></i> 0533 223 67 21</span></div></div></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Sima Logo"></a>
+            <div class="nav-links">
+                <a href="index.html">ANASAYFA</a>
+                <a href="ehliyet-siniflari.html">EHLİYETLER</a>
+                <a href="hakkimizda.html" class="active">HAKKIMIZDA</a>
+                <a href="blog.html">BLOG</a>
+                <a href="iletisim.html">İLETİŞİM</a>
+            </div>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu"><a href="index.html">ANASAYFA</a><a href="hakkimizda.html">HAKKIMIZDA</a></div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero" style="height: 40vh; min-height: 300px; background-image: url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <h1>Hakkımızda</h1>
+            <p>Kaliteli Eğitim, Güvenli Gelecek</p>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="grid-2" style="align-items: center;">
+                <div>
+                    <div class="section-title">
+                        <span>KURUMSAL</span>
+                        <h2>Arifiye'nin Sürücü Kursu</h2>
+                    </div>
+                    <p style="margin-bottom: 1rem; color: var(--text-light);">Sima Sürücü Kursu olarak temel amacımız, sadece ehliyet sınavını geçen bireyler değil, trafikte sorumluluk bilincine sahip, çevreye saygılı ve güvenli sürüş tekniklerini içselleştirmiş sürücüler yetiştirmektir.</p>
+                    <p style="color: var(--text-light);">Uzman eğitmen kadromuz ve modern araç filomuzla Arifiye'de hizmet veriyoruz.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3" alt="Sınıf" style="border-radius: 1rem; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+
+            <!-- Yeni Bölüm: Teorik Sınıf -->
+            <div class="section-padding">
+                <div class="location-section">
+                     <div class="map-container" style="min-height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3" alt="Teorik Sınıf" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="location-content" style="background: var(--white); color: var(--text-main);">
+                        <span class="text-primary" style="font-weight: 700;">EĞİTİM ORTAMI</span>
+                        <h3 class="text-secondary">Teorik Eğitim Sınıfımız</h3>
+                        <p class="text-light">Projeksiyon destekli, klimalı ve ferah sınıflarımızda görsel ve işitsel eğitim materyalleri ile dersler sıkıcı değil, öğretici geçer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filo -->
+            <div class="section-title text-center">
+                <span>ARAÇLARIMIZ</span>
+                <h2>Eğitim Filosu</h2>
+            </div>
+            <div class="grid-3" style="justify-content: center;">
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc" alt="Motor"></div>
+                    <div class="card-body"><h3>Motosikletler</h3><p>A, A1, A2 sınıfları için 3 adet eğitim motoru.</p></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537" alt="Araba"></div>
+                    <div class="card-body"><h3>Otomobiller</h3><p>Manuel ve Otomatik vites seçenekli 2 adet araç.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sima Sürücü Kursu.</p>
+                <div>Designed by <a href="https://www.linkedin.com/in/isa-ayan/" target="_blank" class="designer-link">İsa AYAN</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

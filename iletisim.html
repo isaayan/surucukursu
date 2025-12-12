@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Sima Sürücü Kursu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="top-bar"><div class="container"><div class="top-bar-info"><span>0533 223 67 21</span></div></div></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Sima Logo"></a>
+            <div class="nav-links">
+                <a href="index.html">ANASAYFA</a>
+                <a href="ehliyet-siniflari.html">EHLİYETLER</a>
+                <a href="hakkimizda.html">HAKKIMIZDA</a>
+                <a href="blog.html">BLOG</a>
+                <a href="iletisim.html" class="active">İLETİŞİM</a>
+            </div>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu"><a href="iletisim.html">İLETİŞİM</a></div>
+    </nav>
+
+    <div class="hero" style="height: 40vh; min-height: 300px; background-color: var(--secondary);">
+        <div class="container hero-content text-center">
+            <h1>Bize Ulaşın</h1>
+            <p>Sorularınız için buradayız.</p>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-grid" style="display: grid; grid-template-columns: 1.5fr 1fr; gap:0; border-radius:1.5rem; overflow:hidden; box-shadow:0 20px 25px -5px rgba(0,0,0,0.1); background:white;">
+                <!-- Form -->
+                <div style="padding: 3rem;">
+                    <h2 style="margin-bottom:1.5rem; color:var(--secondary);">Mesaj Gönderin</h2>
+                    <form action="https://formspree.io/f/FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">Ad Soyad</label>
+                            <input type="text" name="name" class="form-input" required placeholder="Adınız">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Telefon</label>
+                            <input type="tel" name="phone" class="form-input" required placeholder="05XX...">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Konu</label>
+                            <select name="subject" class="form-input">
+                                <option>Ehliyet Fiyatları</option>
+                                <option>Kayıt</option>
+                                <option>Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mesaj</label>
+                            <textarea name="message" class="form-input" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Gönder</button>
+                    </form>
+                </div>
+                <!-- Info -->
+                <div style="background: var(--secondary); color:white; padding:3rem;">
+                    <h3 style="margin-bottom:2rem;">İletişim Bilgileri</h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong>Adres:</strong><br>
+                        Zübeyde Hanım Cd. NO:12A, Arifiye / Sakarya
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong>Telefon:</strong><br>
+                        0264 502 09 05<br>
+                        0533 223 67 21
+                    </div>
+                    <div>
+                        <strong>E-Posta:</strong><br>
+                        info@simasurucukursu.com
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konum & YHT -->
+            <div style="margin-top: 4rem;">
+                <div class="location-section">
+                    <div class="map-container">
+                        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.649667791834!2d30.35756477653639!3d40.72551403677443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccad161a030431%3A0x6652c6a0c0071333!2sArifiye%20YHT%20Tren%20Gar%C4%B1!5e0!3m2!1str!2str" loading="lazy"></iframe>
+                    </div>
+                    <div class="location-content">
+                        <h3>Konum</h3>
+                        <p>Arifiye YHT Karşısındayız.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sima Sürücü Kursu.</p>
+                <div>Designed by <a href="https://www.linkedin.com/in/isa-ayan/" target="_blank" class="designer-link">İsa AYAN</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

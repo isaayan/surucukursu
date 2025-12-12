@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sima Sürücü Kursu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="top-bar"><div class="container"><div class="top-bar-info"><span>0533 223 67 21</span></div></div></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Logo"></a>
+            <div class="nav-links">
+                <a href="index.html">ANASAYFA</a>
+                <a href="ehliyet-siniflari.html">EHLİYETLER</a>
+                <a href="hakkimizda.html">HAKKIMIZDA</a>
+                <a href="blog.html" class="active">BLOG</a>
+                <a href="iletisim.html">İLETİŞİM</a>
+            </div>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu"><a href="blog.html">BLOG</a></div>
+    </nav>
+
+    <div class="hero" style="height: 40vh; min-height: 300px; background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <h1>Sürücü Rehberi</h1>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            
+            <!-- Filtreler -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="Tümü">Tümü</button>
+                <button class="filter-btn" data-filter="Sürüş">Sürüş</button>
+                <button class="filter-btn" data-filter="Teknik">Teknik</button>
+                <button class="filter-btn" data-filter="Psikoloji">Psikoloji</button>
+                <button class="filter-btn" data-filter="Trafik">Trafik</button>
+            </div>
+
+            <!-- Grid: 18 Blog Yazısı -->
+            <div class="grid-3">
+                
+                <!-- Card 1 -->
+                <div class="card blog-card" data-category="Sürüş">
+                    <div class="card-img"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPIwYsjOG8b86-mD5OdqpII45xLwnR-klJcpVvXlqLnqqVv7wJsWzZjLOYm0gc3sUJSJOU5xvNZK-cAQkDguHDxMm1dzX2soywWp8age8wa3GYED20O4bZKvL66FtxBrRhkdWR1GYK8qoMG-E5iGI0f4houlOaYoMHVpijElBR7DPoi69JAI-sbSH8OSvJuS8c4WWOp4ch9X2DT4_xkUiMO4-PERh9vcYPi58fqs3W8docowXxQaJc57_W2-cgdwwO469cQ1UnTUmY" alt="Park"></div>
+                    <div class="card-body">
+                        <h3 class="card-title">Paralel Park Sırları</h3>
+                        <p class="card-desc">Tek hamlede park etmenin formülü.</p>
+                        <a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card blog-card" data-category="Psikoloji">
+                    <div class="card-img"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASj0y8K-yxeHUPgPeh1z9jrFqA9bblYxDhPJZRZa8MUPGVo5c6ZfSxaoxYLrwUp_h-uBA9hk1QbviV388v33B4oSWzRqJLK2Us4yR2gOJY5N0H-JAt7PXDDqekl1400sbE4tPtJR0FTzvHOtbteNsbgic6jPkv2uYPEMGdRbnERLh0MDIF4VPpprhXqy9SKcSyG-nVpocRqXW0Y7Tf_ZqrckWt4k6T85MkEb7aMsTf9jFROPAAob79nQh3yYLcCHOgXFrd8K2CBsPf" alt="Stres"></div>
+                    <div class="card-body">
+                        <h3 class="card-title">Sınav Stresi</h3>
+                        <p class="card-desc">Heyecanı yenmenin yolları.</p>
+                        <a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card blog-card" data-category="Teknik">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1597006859346-6c84c703b603" alt="Debriyaj"></div>
+                    <div class="card-body">
+                        <h3 class="card-title">Debriyaj Kavrama</h3>
+                        <p class="card-desc">Stop ettirmemenin mantığı.</p>
+                        <a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 4-18: Çoğaltılmış İçerik (Demo Amaçlı) -->
+                <!-- Gerçek içerikte burası 18 farklı kart olacak, şimdilik grid yapısını göstermek için çoğaltıyorum -->
+                <div class="card blog-card" data-category="Trafik"><div class="card-img"><img src="https://images.unsplash.com/photo-1605218427306-635443a1f9d4" alt="Kavşak"></div><div class="card-body"><h3 class="card-title">Dönel Kavşak Kuralları</h3><p class="card-desc">Yol hakkı kimin?</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                
+                <div class="card blog-card" data-category="Sürüş"><div class="card-img"><img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f" alt="L Park"></div><div class="card-body"><h3 class="card-title">L Park Teknikleri</h3><p class="card-desc">Hatasız L park yapımı.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+
+                <div class="card blog-card" data-category="Teknik"><div class="card-img"><img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f" alt="Lastik"></div><div class="card-body"><h3 class="card-title">Lastik Basıncı</h3><p class="card-desc">İdeal basınç ne olmalı?</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+
+                <div class="card blog-card" data-category="Trafik"><div class="card-img"><img src="https://images.unsplash.com/photo-1506469717960-433cebe3f181" alt="Takip"></div><div class="card-body"><h3 class="card-title">Takip Mesafesi</h3><p class="card-desc">88-89 kuralı nedir?</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+
+                <div class="card blog-card" data-category="Sürüş"><div class="card-img"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e" alt="Yokuş"></div><div class="card-body"><h3 class="card-title">Yokuş Kalkış</h3><p class="card-desc">Geri kaçırmadan kalkış.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+
+                <div class="card blog-card" data-category="Sürüş"><div class="card-img"><img src="https://images.unsplash.com/photo-1519280376657-37b58832c324" alt="Gece"></div><div class="card-body"><h3 class="card-title">Gece Sürüşü</h3><p class="card-desc">Güvenli gece yolculuğu.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+
+                <div class="card blog-card" data-category="Teknik"><div class="card-img"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc" alt="Motor"></div><div class="card-body"><h3 class="card-title">Motor Yağı Kontrolü</h3><p class="card-desc">Kaput altı rehberi.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                
+                 <!-- Grid doluluğu için placeholderlar -->
+                <div class="card blog-card" data-category="Sürüş"><div class="card-img"><img src="https://images.unsplash.com/photo-1511246985062-87ff3f0b07a5" alt="Yağmur"></div><div class="card-body"><h3 class="card-title">Yağmurlu Hava</h3><p class="card-desc">Kaygan zeminde sürüş.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                <div class="card blog-card" data-category="Sürüş"><div class="card-img"><img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Şerit"></div><div class="card-body"><h3 class="card-title">Şerit Değiştirme</h3><p class="card-desc">Ayna kontrolü ve sinyal.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                <div class="card blog-card" data-category="Psikoloji"><div class="card-img"><img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" alt="Hata"></div><div class="card-body"><h3 class="card-title">Kırmızı Hatalar</h3><p class="card-desc">Sınavda kalma sebepleri.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                <div class="card blog-card" data-category="Trafik"><div class="card-img"><img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d" alt="Vites"></div><div class="card-body"><h3 class="card-title">Manuel vs Otomatik</h3><p class="card-desc">Hangisini seçmelisiniz?</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                <div class="card blog-card" data-category="Teknik"><div class="card-img"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJcb-apx0sNBk-LE8ayPO1cl3nbRsn6Uu-SXjUFo0ST1x0ottxF1RvubZ9HqLRZDuU_3gfiC-_0Kvum3xvqulpb_fQWomQF3qX-aUGOa1rM5rMBCsSTRZaK1pn6NFWkxTbpu3NBpdQTziMuDu-YSvtMjOjGWN3kkuId3_1ceGjbxrlh2ZLkEtx2LB4MPm2xLTMkfSFfJn96iiC-XlVti4abqo7rmZX1qYitOqjVvWRhzbvp1vYOf7tyAb05KZo_DPiDK0uRKcDGE7Q" alt="Panel"></div><div class="card-body"><h3 class="card-title">İkaz Işıkları</h3><p class="card-desc">Gösterge paneli anlamları.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                <div class="card blog-card" data-category="Sürüş"><div class="card-img"><img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d" alt="Tutuş"></div><div class="card-body"><h3 class="card-title">Direksiyon Tutuşu</h3><p class="card-desc">9.15 Kuralı.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                <div class="card blog-card" data-category="Sürüş"><div class="card-img"><img src="https://images.unsplash.com/photo-1606103920295-9a091573f160" alt="Yakıt"></div><div class="card-body"><h3 class="card-title">Yakıt Tasarrufu</h3><p class="card-desc">Ekonomik sürüş tüyoları.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+                <div class="card blog-card" data-category="Güvenlik"><div class="card-img"><img src="https://images.unsplash.com/photo-1552176625-e47ff529b595" alt="Ayna"></div><div class="card-body"><h3 class="card-title">Ayna Ayarları</h3><p class="card-desc">Kör noktaları yok edin.</p><a href="blog-detay.html" class="text-primary">Devamını Oku &rarr;</a></div></div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sima Sürücü Kursu.</p>
+                <div>Designed by <a href="https://www.linkedin.com/in/isa-ayan/" target="_blank" class="designer-link">İsa AYAN</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
